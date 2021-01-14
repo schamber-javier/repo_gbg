@@ -821,4 +821,204 @@ h1, h2, h3 {
   visibility: visible;
 }
 
+.blog {
+  overflow: hidden;
+}
+
+.blog__item {
+  margin-bottom: 70px;
+}
+
+.blog__item__pic {
+  height: 385px;
+  position: relative;
+}
+.blog__item__pic .blog__pic__inner {
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: calc(100% - 40px);
+  padding: 30px 0 0;
+}
+.blog__item__pic .blog__pic__inner .label {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  background: #bd1220;
+  display: inline-block;
+  padding: 4px 15px 2px;
+}
+.blog__item__pic .blog__pic__inner ul {
+  display: inline-block;
+  margin-left: 25px;
+}
+.blog__item__pic .blog__pic__inner ul li {
+  list-style: none;
+  font-size: 15px;
+  color: #1a1a1a;
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.blog__item__pic .blog__pic__inner ul li span {
+  color: #1a1a1a;
+}
+.blog__item__pic .blog__pic__inner ul li:after {
+  position: absolute;
+  right: -14px;
+  top: 0;
+  content: "|";
+}
+.blog__item__pic .blog__pic__inner ul li:last-child {
+  margin-right: 0;
+}
+.blog__item__pic .blog__pic__inner ul li:last-child:after {
+  display: none;
+}
+
+.blog__item__text {
+  padding-top: 42px;
+}
+.blog__item__text h2 {
+  font-family: "Raleway", serif;
+  color: #111111;
+  font-style: bold;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+.blog__item__text p {
+  color: #272727;
+  margin-bottom: 26px;
+}
+.blog__item__text a {
+  color: #111111;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #bd1220;
+}
+
+.blog__sidebar__item {
+  margin-bottom: 65px;
+}
+.blog__sidebar__item:last-child {
+  margin-bottom: 0;
+}
+.blog__sidebar__item h5 {
+  font-size: 20px;
+  color: #111111;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 35px;
+}
+.blog__sidebar__item h5:before {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 14px;
+  width: 10px;
+  background: #bd1220;
+  content: "";
+}
+.blog__sidebar__item .blog__sidebar__social a {
+  display: inline-block;
+  font-size: 16px;
+  color: #111111;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  line-height: 46px;
+  text-align: center;
+  margin-right: 6px;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+.blog__sidebar__item .blog__sidebar__social a:hover {
+  background: #111111;
+  color: #ffffff;
+}
+.blog__sidebar__item .blog__sidebar__social a:last-child {
+  margin-right: 0;
+}
+.blog__sidebar__item .blog__sidebar__item__categories ul li {
+  list-style: none;
+  line-height: 36px;
+  overflow: hidden;
+}
+.blog__sidebar__item .blog__sidebar__item__categories ul li:hover a {
+  text-decoration: none;
+}
+.blog__sidebar__item .blog__sidebar__item__categories ul li:hover a span {
+  color: #bd1220;
+}
+.blog__sidebar__item .blog__sidebar__item__categories ul li a {
+  font-size: 16px;
+  color: #444444;
+}
+.blog__sidebar__item .blog__sidebar__item__categories ul li a span {
+  float: right;
+}
+
+.blog__sidebar__recent .blog__sidebar__recent__item:last-child {
+  margin-bottom: 0;
+}
+
+.blog__sidebar__recent__item {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.blog__sidebar__recent__item__pic {
+  float: left;
+  margin-right: 25px;
+}
+
+.blog__sidebar__recent__item__text {
+  overflow: hidden;
+}
+.blog__sidebar__recent__item__text h4 {
+  font-size: 20px;
+  color: #111111;
+  line-height: 26px;
+  font-style: italic;
+  font-family: "Raleway", serif;
+  margin-bottom: 8px;
+}
+.blog__sidebar__recent__item__text span {
+  font-size: 12px;
+  color: #888888;
+}
+
+.blog_links {
+  text-align: right;
+  padding-top: 15px;
+}
+.blog_links a {
+  font-size: 16px;
+  color: #111111;
+  margin-right: 26px;
+  display: inline-block;
+  position: relative;
+}
+.blog_links a:after {
+  position: absolute;
+  right: -16px;
+  top: 0;
+  content: "|";
+  color: #888888;
+}
+.blog_links span {
+  font-size: 16px;
+  color: #888888;
+  display: inline-block;
+}
+
 /*# sourceMappingURL=style2.css.map */
