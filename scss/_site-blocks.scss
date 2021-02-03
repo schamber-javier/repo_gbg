@@ -1,0 +1,259 @@
+//Secciones del sitio
+
+.site-blocks-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: fixed ;
+	position: relative;
+	&.overlay {
+		position: relative;
+		&:before {
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: 0;
+			right: 0;
+			top: 0;
+			background: rgba($black, .2);
+		}
+	}
+	&, & > .container > .row {
+		min-height: 600px;
+		height: calc(100vh);
+	}
+	&.inner-page {
+		&, & > .container > .row {
+			min-height: 600px;
+			height: calc(80vh);	
+		}
+	}
+	h1 {
+		font-size: 8rem;
+		font-weight: 900;
+		line-height: 1;
+		@include media-breakpoint-down(md) {
+			font-size: 4rem;
+		}
+	}
+	.sub-text {
+		font-size: 1.4rem;
+		color: lighten($black, 50%);
+		font-weight: 300;
+		@include media-breakpoint-down(md) {
+			color: $black;
+		}
+	}
+	.img-wrap {
+		position: absolute;
+		z-index: -1;
+		width: calc(100% - 50%);
+		top: 0;
+		height: 100%;
+		z-index: 2;
+		right: 50%;
+		min-height: 600px;
+		overflow: hidden;
+		border-bottom-right-radius: 200px;
+		@include media-breakpoint-down(md) {
+
+			width: 100%;
+			right: 0%;
+			top: 0;
+			.hero-slider {
+				&:before {
+					position: absolute;
+					content: "";
+					background: $white;
+					opacity: .5;
+					z-index: 2;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+				}
+			}
+		}
+		.slide {
+			height: 100vh;
+			position: relative;
+			img {
+				position: absolute;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	
+	}
+	.intro {
+		z-index: 3;
+		position: relative;
+		.heading {
+			
+			margin-left: 0;
+			@include media-breakpoint-down(md) {
+				margin-left: 0;
+			}
+		}
+		.text {
+			padding-left: 0;
+			@include media-breakpoint-down(md) {
+				padding-left: 0;
+			}
+		}
+	}
+}
+.site-menu-toggle {
+	.menu-text {
+		position: relative;
+		top: -6px;
+		text-transform: uppercase;
+	}
+	
+}
+
+.section-title {
+	.sub-title {
+		font-size: .75rem;
+		text-transform: uppercase;
+		letter-spacing: .2rem;
+		font-weight: 400;
+		color: lighten($black, 25%);		
+	}
+	.title {
+		font-size: 2.2rem;
+	}
+}
+
+.contactowhatsapp {
+	position: relative;
+	padding-right: 20px;
+	text-transform: uppercase;
+	font-size: .75rem;
+	letter-spacing: .1rem;
+	font-weight: 900;
+	transition: .3s all ease;
+	&:after {
+		transition: .3s all ease;
+		position: absolute;
+		content: "\e5c8";
+		top: 50%;
+		transform: translateY(-50%);
+		font-family: 'icomoon';
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+	&:hover {
+		padding-right: 30px;
+		&:after {
+			opacity: 1;
+			visibility: visible;
+			
+		}
+	}
+}
+
+.custom-progress {
+	height: 7px;
+	.progress-bar {
+		border-radius: 30px;
+	}
+}
+
+.item { 
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  a {
+  	display: block;
+  	overflow: hidden;
+  	position: relative;
+  	border-radius: 4px;
+	  img {
+	  	position: relative;
+	  	transform: scale(1.0);
+	  	transition: .3s all ease-in-out;
+	  }
+  }
+  .item-wrap {
+  	display: block;
+  	position: relative;
+  	&:after {
+  		z-index: 2;
+			position: absolute;
+			content: "";
+			top: 0; left: 0; right: 0; bottom: 0;
+			background: rgba($black, .4);
+			visibility: hidden;
+			opacity: 0;
+			transition: .3s all ease-in-out;
+  	}
+  	> span {
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		z-index: 3;
+  		transform: translate(-50%, -50%) scale(0.0);
+			color: $white;
+			font-size: 1.7rem;
+			opacity: 0;
+			visibility: hidden;
+			transition: .3s all ease;
+  	}
+  	&:hover {
+  		&:after {
+  			opacity: 1;
+  			visibility: visible;
+  		}
+  		span {
+  			margin-top: 0px;
+  			opacity: 1;
+  			visibility: visible;
+  			transform: translate(-50%, -50%) scale(1.0);
+  		}
+  	}
+  }
+
+  &:hover {
+  	a {
+			img {
+				transform: scale(1.05);
+	  		transition: .3s all ease-in-out;
+			}
+		}
+  }
+}
+
+.jm-sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7em;
+}
+
+.facebook {
+	&, &:hover {
+		color: #ffffff;
+	}
+}
+.instagram {
+	&, &:hover {
+		color: #ffffff;
+	}
+}
+
+.servicio {
+	padding: 30px;
+	color: $black;
+	box-shadow: 0 3px 5px 0 rgba($black, .1);
+	line-height: 1.7;
+	font-style: normal;
+	strong {
+		font-weight: 400;
+    padding: .3rem 0;
+    background: #ff0d0d54;
+	}
+}
+
