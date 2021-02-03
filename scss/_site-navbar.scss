@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 //Menu
 
 .site-navbar-wrap {
+=======
+.site-navbar-wrap {
+	// position: absolute;
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 	position: relative;
 	z-index: 99;
 	width: 100%;
@@ -22,13 +27,26 @@
 	margin-bottom: 0px;
 	width: 100%;
 	padding: 15px 0;
+<<<<<<< HEAD
 	.site-logo {
 		font-weight: 200;
+=======
+	// box-shadow: 4px 0 20px -5px rgba(0,0,0,.1);
+	.site-logo {
+		font-weight: 200;
+		line-height: 0;
+		// top: -7px;
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 		position: relative;
 		a {
 			font-weight: 200;
 			color: $black;
+<<<<<<< HEAD
 			font-size: 2.5rem;
+=======
+			font-size: 2rem;
+			font-weight: bold;
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 		}
 	}
 
@@ -198,7 +216,11 @@
 }
 
 
+<<<<<<< HEAD
 // menu movil
+=======
+// mobile menu
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 
 .site-mobile-menu {
 	width: 300px;
@@ -257,8 +279,14 @@
 	}
 
 	.site-mobile-menu-body {
+<<<<<<< HEAD
 		overflow-y: auto;
   	-webkit-overflow-scrolling: auto;
+=======
+		// height: 400px;
+		overflow-y: scroll;
+  	-webkit-overflow-scrolling: touch;
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 		position: relative;
 		padding: 20px;
 
@@ -270,6 +298,13 @@
 		padding: 0;
 		margin: 0;
 		list-style: none;
+<<<<<<< HEAD
+=======
+		// float: left;
+
+		// width: 100%;
+		// height: 100%;
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 		position: relative;
 
 		a {
@@ -411,6 +446,7 @@
 		padding-top: 0px!important;
 		padding-bottom: 0px!important;
 	}
+<<<<<<< HEAD
 }
 
 #myBtn {
@@ -431,4 +467,6 @@
 
 #myBtn:hover {
 	background-color: rgb(46, 46, 46);
+=======
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 }

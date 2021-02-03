@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 //Secciones del sitio
 
+=======
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 .site-blocks-cover {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -92,13 +95,21 @@
 		position: relative;
 		.heading {
 			
+<<<<<<< HEAD
 			margin-left: 0;
+=======
+			margin-left: -150px;
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 			@include media-breakpoint-down(md) {
 				margin-left: 0;
 			}
 		}
 		.text {
+<<<<<<< HEAD
 			padding-left: 0;
+=======
+			padding-left: 50px;
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 			@include media-breakpoint-down(md) {
 				padding-left: 0;
 			}
@@ -111,7 +122,31 @@
 		top: -6px;
 		text-transform: uppercase;
 	}
+<<<<<<< HEAD
 	
+=======
+}
+
+.hero-slider {
+
+	.owl-nav {
+		position: absolute;
+		bottom: 120px;
+		right: 50px;
+		z-index: 100;
+		.owl-prev, .owl-next {
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			border-radius: 50%;
+			background: $primary;
+			color: $white;
+			margin-bottom: 10px;
+			font-size: 1.3rem;
+		}
+	}
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 }
 
 .section-title {
@@ -120,14 +155,49 @@
 		text-transform: uppercase;
 		letter-spacing: .2rem;
 		font-weight: 400;
+<<<<<<< HEAD
 		color: lighten($black, 25%);		
+=======
+		color: lighten($black, 70%);
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 	}
 	.title {
 		font-size: 2.2rem;
 	}
 }
 
+<<<<<<< HEAD
 .contactowhatsapp {
+=======
+.service {
+	padding: 30px;
+	background: $white;
+	
+	border: 1px solid #eee;
+	border-top: 2px solid $primary;
+	transition: .3s all ease-in-out;
+	position: relative;
+	top: 0;
+	&:hover, &:focus {
+		box-shadow: 0 10px 30px -10px rgba($black, .4);
+		border: 1px solid transparent;
+		border-top: 2px solid $primary;
+		top: -2px;
+	}
+	*:last-child {
+		margin-bottom: 0;
+	}
+	h3 {
+		font-size: 1rem;
+		color: $black;
+	}
+	p {
+		color: lighten($black, 60%);
+		font-size: .85rem;
+	}
+}
+.readmore {
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 	position: relative;
 	padding-right: 20px;
 	text-transform: uppercase;
@@ -163,6 +233,48 @@
 	}
 }
 
+<<<<<<< HEAD
+=======
+.ul-check {
+	margin-bottom: 50px;
+	li {
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 15px;
+		line-height: 1.5;
+		&:before {
+			left: 0;
+			font-size: 20px;
+			top: -.3rem;
+			font-family: "icomoon";
+			content: "\e5ca";
+			position: absolute;
+		}
+	}
+	&.white {
+		li {
+			&:before {
+				color: $white;
+			}
+		}
+	}
+	&.success {
+		li {
+			&:before {
+				color: $success;
+			}
+		}
+	}
+	&.primary {
+		li {
+			&:before {
+				color: $primary;
+			}
+		}
+	}
+}
+
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 .item { 
   border: none;
   margin-bottom: 30px;
@@ -201,6 +313,10 @@
 			font-size: 1.7rem;
 			opacity: 0;
 			visibility: hidden;
+<<<<<<< HEAD
+=======
+			// margin-top: 10px;
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 			transition: .3s all ease;
   	}
   	&:hover {
@@ -227,28 +343,82 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+
+.contact-form {
+	padding: 30px;
+	position: relative;
+	background: $white;
+	box-shadow: 0 10px 50px -10px rgba($black, .1);
+	margin-bottom: -15em;
+}
+
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 .jm-sticky-top {
   position: -webkit-sticky;
   position: sticky;
   top: 7em;
 }
 
+<<<<<<< HEAD
 .facebook {
 	&, &:hover {
 		color: #ffffff;
+=======
+// social icons colors
+.twitter {
+	&, &:hover {
+		color: #1da1f2;
+	}
+}
+.facebook {
+	&, &:hover {
+		color: #3b5998;
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 	}
 }
 .instagram {
 	&, &:hover {
+<<<<<<< HEAD
 		color: #ffffff;
 	}
 }
 
 .servicio {
+=======
+		color: #c13584;
+	}
+}
+.dribbble {
+	&, &:hover {
+		color: #ea4c89;
+	}
+}
+.github {
+	&, &:hover {
+		color: #333;
+	}
+}
+.linkedin {
+	&, &:hover {
+		color: #0077b5;
+	}
+}
+
+.person {
+	h3 {
+		font-size: 1.2rem;
+	}
+}
+
+.testimonial {
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 	padding: 30px;
 	color: $black;
 	box-shadow: 0 3px 5px 0 rgba($black, .1);
 	line-height: 1.7;
+<<<<<<< HEAD
 	font-style: normal;
 	strong {
 		font-weight: 400;
@@ -257,3 +427,54 @@
 	}
 }
 
+=======
+	font-style: italic;
+	.vcard  {
+		figure {
+			flex: 0 0 50px;
+			img {
+				border-radius: 50%;
+			}
+		}
+		.vcard-text {
+			font-style: normal;
+			font-weight: 400;
+			line-height: 1.2;
+			.position {
+				color: lighten($black, 70%);
+			}
+		}
+	}
+	strong {
+		font-weight: 400;
+    padding: .3rem 0;
+    background: #faf5bb;
+	}
+}
+
+.form-subscribe {
+	.form-control {
+		border-color: lighten($black, 20%)!important;
+		background: lighten($black, 30%)!important;
+		&:active, &:focus {
+			border-color: lighten($black, 50%)!important;
+		}
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: #ccc;
+		  font-style: italic;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+		  color: #ccc;
+		  font-style: italic;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+		  color: #ccc;
+		  font-style: italic;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: #ccc;
+		  font-style: italic;
+		}
+	}
+}
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820

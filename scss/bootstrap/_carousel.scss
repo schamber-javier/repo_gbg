@@ -36,7 +36,13 @@
   @include transition($carousel-transition);
 }
 
+<<<<<<< HEAD
 .carousel-item.active {
+=======
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
   display: block;
 }
 
@@ -62,7 +68,13 @@
     transform: none;
   }
 
+<<<<<<< HEAD
   .carousel-item.active {
+=======
+  .carousel-item.active,
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
     z-index: 1;
     opacity: 1;
   }
@@ -75,6 +87,67 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+
+//
+// Left/right controls for nav
+//
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  // Use flex for alignment (1-3)
+  display: flex; // 1. allow flex styles
+  align-items: center; // 2. vertically center contents
+  justify-content: center; // 3. horizontally center contents
+  width: $carousel-control-width;
+  color: $carousel-control-color;
+  text-align: center;
+  opacity: $carousel-control-opacity;
+  @include transition($carousel-control-transition);
+
+  // Hover/focus state
+  @include hover-focus {
+    color: $carousel-control-color;
+    text-decoration: none;
+    outline: 0;
+    opacity: $carousel-control-hover-opacity;
+  }
+}
+.carousel-control-prev {
+  left: 0;
+  @if $enable-gradients {
+    background: linear-gradient(90deg, rgba($black, .25), rgba($black, .001));
+  }
+}
+.carousel-control-next {
+  right: 0;
+  @if $enable-gradients {
+    background: linear-gradient(270deg, rgba($black, .25), rgba($black, .001));
+  }
+}
+
+// Icons for within
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: $carousel-control-icon-width;
+  height: $carousel-control-icon-width;
+  background: no-repeat 50% / 100% 100%;
+}
+.carousel-control-prev-icon {
+  background-image: $carousel-control-prev-icon-bg;
+}
+.carousel-control-next-icon {
+  background-image: $carousel-control-next-icon-bg;
+}
+
+
+>>>>>>> 60574ce595e48346347c0f0b9dec53b9fd2e8820
 // Optional indicator pips
 //
 // Add an ordered list with the following class and add a list item for each
